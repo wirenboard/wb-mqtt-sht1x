@@ -1,0 +1,11 @@
+Source: wb-mqtt-sht1x
+Maintainer: Evgeny Boger <boger@contactless.ru>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9), pkg-config
+
+Package: wb-mqtt-sht1x
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, mosquitto, python-wb-io
+Description: MQTT driver for SHT1x sensors

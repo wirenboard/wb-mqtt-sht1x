@@ -1,0 +1,28 @@
+sht1x.py: Python module to work with Sensirion SHT1x temperature&humidity sensors from userspace.
+Original author: Luca Nobili, https://pypi.python.org/pypi/rpiSht1x
+
+
+wb-mqtt-sht1x: python daemon which posts sensor data to MQTT bus following [HomA conventions](https://github.com/binarybucks/homA/wiki/Conventions).
+
+Default MQTT topics are:
+
+/devices/sht1x/meta/name SHT1x Sensor
+/devices/sht1x/controls/temperature/meta/type temperature
+/devices/sht1x/controls/humidity/meta/type rel_humidity
+
+Sensor data:
+
+/devices/sht1x/controls/temperature
+/devices/sht1x/controls/humidity
+
+Example:
+
+$ mosquitto_sub -h 192.168.0.102 -t '/devices/sht1x/#' -v
+/devices/sht1x/controls/temperature 28.5
+/devices/sht1x/controls/temperature/meta/type temperature
+/devices/sht1x/controls/humidity 31.7
+/devices/sht1x/controls/humidity/meta/type rel_humidity
+/devices/sht1x/meta/name SHT1x Sensor
+
+
+

@@ -1,0 +1,5 @@
+wb-mqtt-sht1x (1.0) stable; urgency=medium
+
+  * Initial release. SHT1x userspace "driver" and mqtt daemon
+
+ -- Evgeny Boger <boger@contactless.ru>  Sun, 28 Sep 2014 05:48:05 +0400
