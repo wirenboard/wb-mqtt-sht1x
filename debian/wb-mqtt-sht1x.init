@@ -3,7 +3,7 @@
 # Provides:          wb-mqtt-sht1x
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Required-Start:
+# Required-Start: $remote_fs mosquitto
 # Required-Stop:
 # Short-Description: MQTT driver for SHT1x temperature and humidity sensor
 # Description:       MQTT driver for SHT1x temperature and humidity sensor
