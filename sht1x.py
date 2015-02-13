@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 import WB_IO.GPIO as GPIO
 
 #   Conversion coefficients from SHT15 datasheet
-D1 = -40.0  # for 14 Bit @ 5V
+D1 = -39.6  # for 14 Bit @ 3V
 D2 =  0.01 # for 14 Bit DEGC
 
 C1 = -2.0468       # for 12 Bit
